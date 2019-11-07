@@ -26,4 +26,34 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeDao.getAllEmployees();
 	}
 
+	@Override
+	public void saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		employeeDao.saveEmployee(employee);
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return employeeDao.updateEmployee(employee);
+	}
+
+	@Override
+	public void deleteEmployeeById(int id) {
+		// TODO Auto-generated method stub
+		employeeDao.deleteEmployeeById(id);
+	}
+
+	@Override
+	public Employee findById(int id) {
+		// TODO Auto-generated method stub
+		return employeeDao.findById(id);				
+	}
+
+	@Override
+	public List<Employee> getEmployeeByFirstName(String firstName) {
+		// TODO Auto-generated method stub
+		return employeeDao.getEmployeeByFirstName(firstName);
+	}
+
 }

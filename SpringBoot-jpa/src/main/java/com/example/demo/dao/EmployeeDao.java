@@ -6,5 +6,9 @@ import com.example.demo.entity.Employee;
 
 public interface EmployeeDao {
 	public List<Employee> getAllEmployees();
-	public Employee saveEmployee(Employee employee);
+	public void saveEmployee(Employee employee);
+	public Employee updateEmployee(Employee employee);
+	public Employee findById(int id);
+	public void deleteEmployeeById(int id);
+	public List<Employee> getEmployeeByFirstName(String firstName);
 }
